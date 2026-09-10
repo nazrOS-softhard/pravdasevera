@@ -17,8 +17,17 @@
   letter-spacing: 0.01em;
 }
 
-.footer__col p { margin-top: 10px; font-size: 13px; color: var(--text-dim); }
-.footer__col p:first-child { margin-top: 0; }
+.footer__address {
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--text-dim);
+  max-width: 24ch;
+}
+
+.footer__col { display: flex; flex-direction: column; }
+.footer__col a { margin-top: 10px; font-size: 13px; color: var(--text-dim); transition: color 0.15s ease; }
+.footer__col a:first-of-type { margin-top: 0; }
+.footer__col a:hover { color: var(--accent); }
 
 .footer__news-sub { font-size: 13px; margin: 10px 0 14px; max-width: 30ch; }
 

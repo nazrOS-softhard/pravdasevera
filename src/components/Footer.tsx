@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './footer.css'
 
 export default function Footer() {
@@ -10,29 +11,32 @@ export default function Footer() {
       <div className="container footer__top">
         <div className="footer__brand">
           <p className="footer__logo">ПРАВДА СЕВЕРА</p>
+          <p className="footer__address">
+            Архангельск, набережная Северной Двины, 26
+          </p>
         </div>
 
         <div className="footer__col">
           <p className="eyebrow">Платформа</p>
-          <p>О нас</p>
-          <p>Услуги</p>
-          <p>Проекты</p>
-          <p>Архив</p>
+          <Link to="/about">О нас</Link>
+          <Link to="/services">Услуги</Link>
+          <Link to="/projects">Проекты</Link>
+          <Link to="/archive">Архив</Link>
         </div>
 
         <div className="footer__col">
           <p className="eyebrow">Помощь</p>
-          <p>Доставка и оплата</p>
-          <p>Вопросы и ответы</p>
-          <p>Гарантии</p>
-          <p>Контакты</p>
+          <Link to="/contacts">Доставка и оплата</Link>
+          <Link to="/contacts">Вопросы и ответы</Link>
+          <Link to="/contacts">Гарантии</Link>
+          <Link to="/contacts">Контакты</Link>
         </div>
 
         <div className="footer__col">
           <p className="eyebrow">Документы</p>
-          <p>Пользовательское соглашение</p>
-          <p>Политика конфиденциальности</p>
-          <p>Оферта</p>
+          <Link to="/contacts">Пользовательское соглашение</Link>
+          <Link to="/contacts">Политика конфиденциальности</Link>
+          <Link to="/contacts">Оферта</Link>
         </div>
 
         <div className="footer__news">

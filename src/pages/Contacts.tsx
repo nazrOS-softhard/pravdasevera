@@ -27,7 +27,7 @@ export default function Contacts() {
             </div>
             <div className="contact-row">
               <IconPin />
-              <span>Кузнечихинский проезд, 1-й проезд, 5с2</span>
+              <span>Архангельск, набережная Северной Двины, 26</span>
             </div>
 
             <div className="contact-social">
@@ -37,7 +37,7 @@ export default function Contacts() {
           </div>
 
           <div className="contact-map">
-            <Photo variant={4} ratio="4 / 3" />
+            <Photo variant={4} ratio="4 / 3" label="Набережная Северной Двины, 26" />
             <span className="contact-map__pin">ПРАВДА СЕВЕРА</span>
           </div>
         </div>
