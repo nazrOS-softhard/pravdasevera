@@ -1,0 +1,37 @@
+.photo {
+  position: relative;
+  width: 100%;
+  background: var(--photo-2);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.photo--v1 { background: linear-gradient(155deg, #3a3a3a 0%, #1c1c1c 55%, #0c0c0c 100%); }
+.photo--v2 { background: linear-gradient(200deg, #2e2e2e 0%, #171717 60%, #0a0a0a 100%); }
+.photo--v3 { background: radial-gradient(circle at 30% 20%, #444 0%, #1a1a1a 55%, #0c0c0c 100%); }
+.photo--v4 { background: linear-gradient(115deg, #262626 0%, #141414 50%, #050505 100%); }
+.photo--v5 { background: radial-gradient(circle at 70% 70%, #383838 0%, #191919 60%, #0a0a0a 100%); }
+
+.photo::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: repeating-linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.02) 0px,
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px,
+    transparent 5px
+  );
+}
+
+.photo__label {
+  position: relative;
+  z-index: 1;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(244, 243, 239, 0.45);
+  padding: 10px 12px;
+}

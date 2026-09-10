@@ -1,0 +1,24 @@
+.icon-tile {
+  border: 1px solid var(--border);
+  padding: 22px 18px;
+  background: var(--surface);
+  transition: border-color 0.15s ease;
+}
+
+.icon-tile:hover { border-color: var(--border-strong); }
+
+.icon-tile__icon {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.icon-tile__title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.icon-tile__desc { font-size: 12px; line-height: 1.5; }

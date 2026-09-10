@@ -1,0 +1,36 @@
+.service-card {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.service-card__title {
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.service-card.is-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  aspect-ratio: 1 / 1;
+}
+
+.service-card.is-accent .service-card__icon {
+  color: var(--accent-ink);
+  margin-bottom: auto;
+}
+
+.service-card.is-accent .service-card__title {
+  padding: 0;
+  color: var(--accent-ink);
+  margin-top: 16px;
+}

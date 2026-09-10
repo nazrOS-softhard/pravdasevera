@@ -1,0 +1,49 @@
+.plist-item {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.plist-item__photo { width: 64px; }
+
+.plist-item__title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.plist-item__meta {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.plist-item__bar {
+  height: 4px;
+  background: var(--border);
+  margin-top: 10px;
+  width: 100%;
+  max-width: 220px;
+}
+
+.plist-item__bar span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+
+.plist-item__status {
+  font-size: 11px;
+  color: var(--text-dim);
+  margin-top: 6px;
+}
+
+@media (max-width: 600px) {
+  .plist-item { grid-template-columns: 52px 1fr; }
+  .plist-item .btn { grid-column: 1 / -1; margin-top: 4px; }
+}
