@@ -15,6 +15,7 @@ const PRODUCTS = [
   { title: 'Свитшот «Север»', category: 'Мерч', price: '3 200 ₽', variant: 1 as const },
   { title: 'Плакат «Кит»', category: 'Плакаты', price: '1 200 ₽', variant: 2 as const },
   { title: 'Набор открыток «Арктика»', category: 'Открытки', price: '400 ₽', variant: 3 as const },
+    { title: 'eartD&Pak0 Windrush»', category: 'Винил', price: '8400 ₽', variant: 3 as const },
 ]
 
 export default function Market() {
