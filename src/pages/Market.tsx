@@ -15,7 +15,35 @@ const PRODUCTS = [
   { title: 'Свитшот «Север»', category: 'Мерч', price: '3 200 ₽', variant: 1 as const },
   { title: 'Плакат «Кит»', category: 'Плакаты', price: '1 200 ₽', variant: 2 as const },
   { title: 'Набор открыток «Арктика»', category: 'Открытки', price: '400 ₽', variant: 3 as const },
-    { title: 'eartD&Pak0 Windrush»', category: 'Винил', price: '8400 ₽', variant: 3 as const },
+
+  // === ВИНИЛ ===
+  {
+    title: 'EARTH & PAKO WINDRUSH',
+    category: 'Винил',
+    price: '8 400 ₽',
+    variant: 3 as const,
+    author: 'Арктик Саунд',
+    format: '12" LP, 33 RPM',
+    press: 'Лимит 300',
+  },
+  {
+    title: 'СЕВЕРНЫЙ ШУМ',
+    category: 'Винил',
+    price: '3 200 ₽',
+    variant: 1 as const,
+    author: 'Северный Синтез',
+    format: '12" LP, 33 RPM',
+    press: 'Лимит 500',
+  },
+  {
+    title: 'ПОЛЯРНАЯ НОЧЬ',
+    category: 'Винил',
+    price: '2 100 ₽',
+    variant: 2 as const,
+    author: 'Арктик Саунд',
+    format: '10" EP, 45 RPM',
+    press: 'Лимит 150',
+  },
 ]
 
 export default function Market() {
