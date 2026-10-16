@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard'
 import { IconFilter } from '../components/Icons'
 import './market.css'
 
-const TABS = ['Все', 'Книги', 'Плакаты', 'Открытки', 'Мерч', 'Фото', 'Журналы', 'Другое']
+const TABS = ['Все', 'Книги', 'Плакаты', 'Открытки', 'Мерч', 'Фото', 'Журналы', 'Винил', 'Другое']
 
 const PRODUCTS = [
   { title: 'Фотокнига «Белое море»', category: 'Книги', price: '2 500 ₽', variant: 1 as const },
